@@ -1,17 +1,139 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>percentage</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Stitch Fit - Men's Garments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcfcfc;
+            color: #333;
+        }
+        /* Header styling */
+        header {
+            background-color:darkblue;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+        /* Hero section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #fff0f3;
+        }
+        .hero h1 {
+            color: #02082b;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+        }
+        .btn {
+            background-color: #08022b;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        /* Products section */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #222;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: white;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+        .product-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+        .product-card p {
+            color: #1b0436;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Header -->
+    <header>
+        <h2>Stitch Fit</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Stitch Fit Men's Garments</h1>
+        <p>Stitch Fit aap ke wardrobe ko naya rang dene ke liye tayyar hai. Aaj hi apna favorite shirt select karein aur apne look ko unique banayein.</p>
+        <button class="btn">Shop Now</button>
+    </div>
+
+    <!-- Products Section -->
     <div class="container">
-<input type="number" id="parent" placeholder="enter percentage">
-<button onclick="checkgrade()">checkgrade</button>
-<h3 id="result"></h3>
-    <script src="app.js"></script>  
-</div>
+        <h2 class="section-title">Our Featured Shirts</h2>
+        <div class="product-grid" id="product-container">
+            <!-- JavaScript yahan automatically products inject karega -->
+        </div>
+    </div>
+
+    <!-- JavaScript File Link -->
+    <script src="script.js"></script>
 </body>
 </html>
